@@ -1,0 +1,171 @@
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #0a0a0a;
+  color: #fff;
+}
+header {
+  background: transparent;
+  color: #fff;
+  padding: 3.5rem 0 1.2rem 0;
+  text-align: center;
+  border-bottom: none;
+}
+header h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin: 0 0 0.7rem 0;
+  letter-spacing: -2px;
+  background: linear-gradient(90deg, #fff 60%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+header p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  margin: 0;
+}
+nav {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 2vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  gap: 2vw;
+}
+nav li {
+  margin: 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+  display: block;
+  letter-spacing: 0.01em;
+}
+nav a:hover, nav a:focus {
+  background: #232323;
+  color: #fff;
+  outline: none;
+}
+main {
+  max-width: 980px;
+  margin: 2.5rem auto 0 auto;
+  background: rgba(20,20,20,0.95);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+}
+section {
+  margin-bottom: 2.5rem;
+}
+section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+section p {
+  font-size: 1.08rem;
+  color: #b3b3b3;
+}
+footer {
+  background: transparent;
+  color: #b3b3b3;
+  text-align: center;
+  padding: 2rem 0 1.5rem 0;
+  font-size: 0.98rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin-top: 3rem;
+}
+/* 카드형 섹션 예시 */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.card {
+  background: #18181b;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  text-align: center;
+  transition: box-shadow 0.2s, background 0.2s;
+  border: 1px solid #232323;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(99,102,241,0.18);
+  background: #232323;
+}
+.card-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+.card-desc {
+  font-size: 1rem;
+  color: #b3b3b3;
+  margin-bottom: 1.2rem;
+}
+.card-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+}
+.card-btn:hover {
+  background: linear-gradient(90deg, #0ea5e9 0%, #6366f1 100%);
+}
+@media (max-width: 900px) {
+  main {
+    padding: 1.2rem 0.5rem;
+  }
+  .card-list {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  nav ul {
+    gap: 0.5rem;
+    padding: 0 1vw;
+  }
+  nav a {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.5rem;
+  }
+  main {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
