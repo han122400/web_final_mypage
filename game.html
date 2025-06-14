@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응속도 테스트</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+  <body>
+    <video
+      class="background-video"
+      src="img/background.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+    ></video>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="project.html">portfolio</a></li>
+        <li><a href="team.html">team</a></li>
+        <li><a href="game.html">game</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="reaction-container">
+        <h1 class="typing-animation" style="color:#fff;margin-bottom:2.2rem;">⚡ 반응속도 테스트</h1>
+        <div id="reaction-box">시작 버튼을 누르세요</div>
+        <button id="start-btn">시작</button>
+        <div id="result"></div>
+        <p style="color:#b3b3b3;margin-top:2.5rem;font-size:1.08rem;text-align:center;max-width:400px;line-height:1.7;">시작 버튼을 누른 뒤, 박스가 <span style="color:#4caf50;font-weight:700;">초록색</span>으로 바뀌면 최대한 빨리 클릭하세요!<br>빨간색일 때 클릭하면 실패입니다.</p>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

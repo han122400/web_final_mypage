@@ -18,29 +18,34 @@
     ></video>
     <nav>
       <ul>
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">abuot</a></li>
-        <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#team">team</a></li>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="project.html">portfolio</a></li>
+        <li><a href="team.html">team</a></li>
+        <li><a href="game.html">game</a></li>
       </ul>
     </nav>
+    
     <main>
-      <section id="home">
-        <h2>홈</h2>
-        <p>이곳은 나의 웹사이트 메인 페이지입니다.</p>
-      </section>
-      <section id="about">
-        <h2>소개</h2>
-        <p>자기소개나 사이트에 대한 설명을 여기에 작성하세요.</p>
-      </section>
-      <section id="portfolio">
-        <h2>포트폴리오</h2>
-        <p>작업물이나 프로젝트를 소개할 수 있습니다.</p>
-      </section>
-      <section id="team">
-        <h2>팀 페이지</h2>
-        <p>팀원 소개 및 역할을 여기에 작성하세요.</p>
+      <section id="home" class="home-section">
+        <div class="home-container">
+          <div class="home-image">
+            <img src="img/me.png" alt="프로필 이미지" />
+          </div>
+          <div class="home-text">
+            <h1 class="typing-animation" id="main-typing"></h1>
+            <p class="home-guide">아래에는 저의 깃허브, 인스타그램, 블로그가 있습니다.<br>
+            버튼을 눌러 이동할 수 있어요!<br>
+            위에는 네비게이션바 입니다.</p>
+            <div class="social-btns-container">
+              <a href="https://github.com/han122400" class="social-btn github" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.instagram.com/pepe_122400/" class="social-btn instagram" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://blog.naver.com/han122400" class="social-btn blog" target="_blank" rel="noopener">Blog</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
