@@ -1,0 +1,80 @@
+nav {
+  background: rgba(20, 20, 20, 0.2);
+  box-shadow: none;
+  padding: 0;
+  padding-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: none;
+  opacity: 0;
+  animation: navFadeIn 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes navFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1.2rem 1rem; /* 위아래, 좌우 */
+  transition: color 0.3s;
+  display: inline-block; /* 추가 */
+  box-sizing: border-box; /* 추가 */
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0; /* 추가 */
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 0.5rem;
+    padding: 0 1vw;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.5rem;
+  }
+}
