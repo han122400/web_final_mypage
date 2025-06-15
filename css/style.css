@@ -28,6 +28,7 @@ header p {
 }
 main {
   max-width: 1200px;
+  min-height: 550px;
   margin: 1.2rem auto 0 auto;
   background: rgba(20, 20, 20, 0.95);
   padding: 1.2rem 1rem;
@@ -35,7 +36,7 @@ main {
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
 }
 section {
-  margin-bottom: 0rem;
+  margin-bottom: 10px;
 }
 section h2 {
   font-size: 1.5rem;
@@ -129,9 +130,9 @@ footer {
   align-items: flex-start; /* 위로 정렬 */
   justify-content: center;
   background: none;
-  /* padding-top: 80px; 전체적으로 위로 올림 */
-  margin-bottom: -20rem;
-  margin-top: 3rem;
+  padding-top: -180px; /*전체적으로 위로 올림 */
+  /* margin-bottom: 20rem; */
+  margin-top: 2rem;
 }
 
 .home-container {
@@ -160,7 +161,7 @@ footer {
   max-width: 300px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
   object-fit: cover;
   background: #fff;
 }
@@ -224,7 +225,7 @@ footer {
   transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
   position: relative;
   overflow: hidden;
-  animation: btn-pop 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+  animation: btn-pop 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .social-btn.github {
   background: linear-gradient(90deg, #333 0%, #6366f1 100%);
@@ -329,7 +330,7 @@ footer {
   transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
   position: relative;
   overflow: hidden;
-  animation: btn-pop 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+  animation: btn-pop 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   margin-bottom: 0;
 }
 .member-card .member-links a.github {
@@ -404,14 +405,14 @@ footer {
   transition: background 0.3s;
   color: #222;
   font-weight: 700;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 #result {
   font-size: 1.5rem;
   margin-top: 10px;
   color: #ffd700;
   font-weight: 700;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 #start-btn {
   padding: 10px 30px;
